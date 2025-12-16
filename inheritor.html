@@ -409,7 +409,7 @@
     <script>
         // 返回地图按钮（修改：跳转至主页面Default.aspx，与主页面文件名一致）
         $("#backToMap").click(function () {
-            window.location.href = "Default.aspx";
+            window.location.href = "index.html";
         });
 
         // 定位传承人传习所（修改：跳转路径改为Default.aspx，确保参数正确传递）
@@ -417,7 +417,7 @@
             const lat = $(this).data("lat");
             const lng = $(this).data("lng");
             const name = $(this).data("name");
-            window.location.href = `Default.aspx?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
+            window.location.href = `index.html?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
         });
 
         // 作品卡片点击定位（修改：跳转路径改为Default.aspx，保持双向联动一致）
@@ -425,7 +425,7 @@
             const lat = $(this).data("lat");
             const lng = $(this).data("lng");
             const name = $(this).data("name");
-            window.location.href = `Default.aspx?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
+            window.location.href = `index.html?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
         });
     </script>
 </body>

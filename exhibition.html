@@ -876,7 +876,7 @@
 
         // 返回地图按钮（修改：跳转至主页面default.html）
         $("#backToMap").click(function () {
-            window.location.href = "Default.aspx";
+            window.location.href = "index.html";
         });
 
         // 定位展品产地（双向联动：跳转至主页面并传递定位参数）
@@ -884,7 +884,7 @@
             const lat = $(this).data("lat");
             const lng = $(this).data("lng");
             const name = $(this).data("name");
-            window.location.href = `Default.aspx?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
+            window.location.href = `index.html?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
         });
 
         // 初始化页面

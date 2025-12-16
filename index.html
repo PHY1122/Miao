@@ -1760,9 +1760,9 @@
                 const marker = L.marker([item.Lat, item.Lng], {
                     icon: createCustomIcon('#27ae60')
                 })
-                    .addTo(map)
-                    .bindPopup(createEnhancedMiaoxiuPopupContent(item))
-                    .openPopup();
+                .addTo(map)
+                .bindPopup(createEnhancedMiaoxiuPopupContent(item))
+                .openPopup();
 
                 distributionMarkers.push(marker);
                 currentMiaoxiuImages = item.Images || [];
@@ -1805,8 +1805,8 @@
                 const marker = L.marker([item.lat, item.lng], {
                     icon: createCustomIcon('#e74c3c')
                 })
-                    .addTo(map)
-                    .bindPopup(popupContent);
+                .addTo(map)
+                .bindPopup(popupContent);
 
                 originMarkers.push(marker);
             });
@@ -1859,8 +1859,8 @@
                 const marker = L.marker([item.Lat, item.Lng], {
                     icon: createCustomIcon(markerColor)
                 })
-                    .addTo(map)
-                    .bindPopup(popupContent);
+                .addTo(map)
+                .bindPopup(popupContent);
 
                 // 添加点击事件
                 marker.on("popupopen", function () {
@@ -2042,8 +2042,8 @@
                     const marker = L.marker([item.Lat, item.Lng], {
                         icon: createCustomIcon('#f39c12')
                     })
-                        .addTo(map)
-                        .bindPopup(createEnhancedMiaoxiuPopupContent(item));
+                    .addTo(map)
+                    .bindPopup(createEnhancedMiaoxiuPopupContent(item));
 
                     distributionMarkers.push(marker);
                 });
@@ -2300,7 +2300,7 @@
                 const marker = L.marker([item.lat, item.lng], {
                     icon: createCustomIcon('#3498db')
                 })
-                    .addTo(map);
+                .addTo(map);
 
                 originMarkers.push(marker);
             });

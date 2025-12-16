@@ -363,7 +363,7 @@
         // 返回地图按钮（修改：跳转至主页面default.html）
         $("#backToMap").click(function() {
             // 返回主地图页面，不带定位参数
-            window.location.href = "Default.aspx";
+            window.location.href = "index.html";
         });
 
         // 定位到地图按钮（双向联动核心：修改跳转至主页面）
@@ -372,7 +372,7 @@
             const lng = $(this).data("lng");
             const name = $(this).data("name");
             // 跳转到主地图，并传递定位参数（主地图需解析这些参数并定位）
-            window.location.href = `Default.aspx?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
+            window.location.href = `index.html?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
         });
     </script>
 </body>
