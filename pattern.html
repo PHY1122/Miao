@@ -415,7 +415,7 @@
 
         // 返回地图按钮
         $("#backToMap").click(function () {
-            window.location.href = "Default.html";
+            window.location.href = "index.html";
         });
 
         // 定位到地图按钮
@@ -423,7 +423,7 @@
             const lat = $(this).data("lat");
             const lng = $(this).data("lng");
             const name = $(this).data("name");
-            window.location.href = `Default.html?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
+            window.location.href = `index.html?locate=true&lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
         });
     </script>
 </body>
